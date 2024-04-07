@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lego Collection</title>
-  <link rel="stylesheet" href="/css/main.css" />
-
-</head>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,9 +14,7 @@
 <body tabindex="-1">
   <%- include('partials/navbar', { page: '/about' }) %>
     <div class="navbar bg-base-100">
-      <div class="flex-1">
-        <a class="btn btn-ghost normal-case text-xl" href="/">Lego Collection</a>
-      </div>
+     
 
       <div class="dropdown">
         <label tabindex="0" class="btn btn-ghost sm:hidden">
@@ -42,7 +31,7 @@
                 Theme
               </summary>
               <ul class="p-2 bg-base-100">
-                <li><a href="/lego/sets?theme=creator">Creator</a></li>
+                <li><a href="/lego/sets?theme=Dark Forest">Dark Forest</a></li>
                 <li><a href="/lego/sets?theme=Town">Town</a></li>
                 <li><a href="/lego/sets?theme=Res-Q">Res-Q</a></li>
               </ul>
@@ -54,11 +43,12 @@
       <div class="navbar-center hidden sm:flex">
         <ul class="menu menu-horizontal px-1">
           <li><a class="active" href="/about">About</a></li>
+          <li><a href="/lego/addSet">Add Set</a></li>
           <li>
             <details>
               <summary>Theme</summary>
               <ul class="p-2 bg-base-100 right-0">
-                <li><a href="/lego/sets?theme=creator">Creator</a></li>
+                <li><a href="/lego/sets?theme=Dark Forest">Dark Forest</a></li>
                 <li><a href="/lego/sets?theme=Town">Town</a></li>
                 <li><a href="/lego/sets?theme=Res-Q">Res-Q</a></li>
               </ul>

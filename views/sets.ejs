@@ -11,6 +11,26 @@
 <body tabindex="-1">
   <!-- Include navbar partial -->
   <% include('partials/navbar', { page: '/lego/sets' }) %>
+  <div class="navbar-center hidden sm:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li><a href="/about">About</a></li>
+      <li><a href="/lego/addSet">Add Set</a></li>
+      <li>
+        <details>
+          <summary>Theme</summary>
+          <ul class="p-2 bg-base-100 right-0">
+            <li><a href="/lego/sets?theme=Dark Forest">Dark Forest</a></li>
+              <li><a href="/lego/sets?theme=Town">Town</a></li>
+              <li><a href="/lego/sets?theme=Res-Q">Res-Q</a></li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<br />
+
 
   <div class="container mx-auto">
 
@@ -27,6 +47,7 @@
     </div>
 
     <br />
+    
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       <% sets.forEach(set => { %>
